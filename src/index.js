@@ -1,4 +1,3 @@
-import axios from 'axios'
 import fs from 'fs'
 
 export default function(code, page, path = './locale'){

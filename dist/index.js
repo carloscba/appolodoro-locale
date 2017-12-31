@@ -19,10 +19,6 @@ exports.default = function (code, page) {
     }
 };
 
-var _axios = require('axios');
-
-var _axios2 = _interopRequireDefault(_axios);
-
 var _fs = require('fs');
 
 var _fs2 = _interopRequireDefault(_fs);
