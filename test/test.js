@@ -3,10 +3,10 @@ var appolodoroLocale = require('../dist').default
 
 describe('Test Appolodoro-locale', function() {
     
-    const copy = appolodoroLocale('es-ES','./locale')
+    const copy = appolodoroLocale('es-ES','index')
     
     it('Testing contructor', function() {
-        assert.equal(copy.index.title, 'Index')
+        assert.equal(copy.title, 'Index')
     });  
     
 });

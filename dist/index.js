@@ -4,15 +4,16 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-exports.default = function (code) {
-    var path = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : './locale';
+exports.default = function (code, page) {
+    var path = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : './locale';
 
 
     var localePath = path + '/' + code + '.json';
 
     try {
-        var data = _fs2.default.readFileSync(localePath, 'utf8');
-        return JSON.parse(data);
+        var response = _fs2.default.readFileSync(localePath, 'utf8');
+        var data = JSON.parse(response);
+        return data[page];
     } catch (error) {
         new Error(error);
     }

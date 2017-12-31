@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/carloscba/appolodoro-locale#readme",
   "dependencies": {
-    "axios": "^0.17.1",
     "fs": "0.0.1-security"
   },
   "devDependencies": {
