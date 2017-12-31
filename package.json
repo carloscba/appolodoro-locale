@@ -1,0 +1,33 @@
+{
+  "name": "appolodoro-locale",
+  "version": "0.1.0",
+  "description": "appolodoro-locale is a module from Appolodoro for manage tranlates.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist -w",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloscba/appolodoro-locale.git"
+  },
+  "keywords": [
+    "js",
+    "facebook"
+  ],
+  "author": "carloscba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carloscba/appolodoro-locale/issues"
+  },
+  "homepage": "https://github.com/carloscba/appolodoro-locale#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "mocha": "^4.0.1"
+  }
+}
