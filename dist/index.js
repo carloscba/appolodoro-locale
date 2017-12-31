@@ -5,17 +5,17 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function (code, page) {
-    var path = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : './locale';
+    var path = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '../locale';
 
 
-    var localePath = path + '/' + code + '.json';
+    var localePath = path + '/' + code + '.js';
 
     try {
-        var response = _fs2.default.readFileSync(localePath, 'utf8');
-        var data = JSON.parse(response);
+        var response = require(localePath);
+        var data = response.default;
         return data[page];
     } catch (error) {
-        new Error(error);
+        new Error('Appolodoro:' + error);
     }
 };
 

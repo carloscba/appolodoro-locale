@@ -1,6 +1,6 @@
 {
   "name": "appolodoro-locale",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "appolodoro-locale is a module from Appolodoro for manage tranlates.",
   "main": "./dist/index.js",
   "scripts": {
